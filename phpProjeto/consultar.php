@@ -9,11 +9,18 @@
 <body>
     <?php 
         include 'cadastro.php';
-        include 'paginaCadastro.php';
 
-        $cadastroUm = consultarObjeto();
+        session_start();
+        $cpf = $_SESSION['cpf'];
+        $nome = $_SESSION['nome'];
+        $tel = $_SESSION['telefone'];
+        $end = $_SESSION['endereco'];
+        $cid = $_SESSION['cidade'];
 
-        echo $cadastroUm->imprimir();
+        $cad = new Cadastro($cpf, $nome, $tel, $end, $cid);
+        echo $cad->imprimir();
     ?>
+
+    <button><a href="index.php"> Voltar </a></button>
 </body>
 </html>

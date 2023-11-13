@@ -45,27 +45,27 @@
         
         public function setCPF($cpf)
         {
-            return $this->cpf = $cpf;
+            $this->cpf = $cpf;
         }//Fim do metodo
         
         public function setNome($nome)
         {
-            return $this->nome = $nome;
+            $this->nome = $nome;
         }//Fim do metodo
         
         public function setTelefone($telefone)
         {
-            return $this->telefone = $telefone;
+            $this->telefone = $telefone;
         }//Fim do metodo
         
         public function setEndereco($endereco)
         {
-            return $this->endereco = $endereco;
+            $this->endereco = $endereco;
         }//Fim do metodo
         
         public function setCidade($cidade)
         {
-            return $this->cidade = $cidade;
+            $this->cidade = $cidade;
         }//Fim do metodo
 
         //Consultar
